@@ -6,7 +6,6 @@ var Word = function(value) {
   for(var i = 0; i < this.value.length; i++) {
 		this.array.push(new Letter(this.value[i]))
 	}
-  console.log(this.array);
 }
 Word.prototype.isComplete = function(){
 	for(var i = 0; i < this.array.length; i++){
