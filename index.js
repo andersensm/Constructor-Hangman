@@ -1,13 +1,11 @@
 var Word = require("./Word");
 var inquirer = require("inquirer");
 var letterGuessed;
-
 var wordsToGuess = ["briefcase", "suit", "shoes", "tie", "pen", "pencil", "jacket", "hat"];
 var randomIndex = Math.floor(Math.random() * wordsToGuess.length);
 var randomWord = wordsToGuess[randomIndex];
 var randomWordSplit = randomWord.split("")
 var splitLength = randomWordSplit.length
-
 var myWord = new Word(randomWord);
 var maxGuesses = 15;
 
