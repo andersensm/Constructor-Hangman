@@ -9,7 +9,8 @@ var Word = function(value) {
 }
 Word.prototype.isComplete = function(){
 	for(var i = 0; i < this.array.length; i++){
-		if(!this.array[i].guessed) {
+    console.log(this.array[i].guessed)
+		if(this.array[i].guessed === false) {
       return false;
     }
 	}
