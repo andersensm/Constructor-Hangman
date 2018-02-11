@@ -26,7 +26,7 @@ function Guess(){
 				myWord.findLetter(keyPress);
 					if(myWord.isComplete()){
 					console.log('YOU WIN! It was ' + myWord.toString() + '!');
-					return; //Winner
+					return;
         } else {
           console.log('-------------------\n');
           console.log('You have ' + (maxGuesses - myWord.guessesMade.length) + ' guesses left.')
